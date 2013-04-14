@@ -1,0 +1,21 @@
+--- phorum-mod-solr_search-1.0.0/solr_search.php~	2009-03-09 12:29:29.000000000 +0200
++++ phorum-mod-solr_search-1.0.0/solr_search.php	2013-04-14 11:41:27.861514529 +0300
+@@ -159,17 +159,3 @@
+    }
+    return $response;
+ }
+-
+-if(!function_exists("json_decode"))
+-{
+-	require_once("./mods/solr_search/json.php");
+-	
+-	function json_decode($object)
+-	{
+-		$json = new Services_JSON(SERVICES_JSON_LOOSE_TYPE);
+-	
+-		return $json->decode( $object ); 
+-	}
+-}
+-
+-?>
+\ No newline at end of file
