@@ -41,7 +41,7 @@ of the phorum-search.
 %setup -qc
 mv %{module}/* .
 %undos -f php,txt README Changelog
-%patch0 -p1
+%patch -P0 -p1
 
 # we use json ext
 %{__rm} json.php
